@@ -276,6 +276,63 @@ main {
   border-radius: 8px;
 }
 
+.contact-resume-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+#contact {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
 
+.plain-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#resume {
+  width: 40%;
+  height: 400px;
+}
+
+.plain {
+  font-size: 1.17em;
+  text-align: center;
+  width: 100%;
+  margin: 5px;
+}
+
+.medium-title {
+  border-bottom: 1px solid var(--teal);
+  font-size: 30px;
+  line-height: .1em;
+  max-width: 1200px;
+  text-align: center;
+  width: 80%;
+}
+
+.medium-title > span {
+  background: var(--dark-blue);
+  padding: 0 10px;
+}
+
+.socials-icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
