@@ -48,6 +48,7 @@ nav > div {
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 20px;
+  transition: ease 0.5s;
 }
 
 .nav-link:hover {
@@ -197,7 +198,7 @@ main {
   right: 0;
   bottom: 0;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -380,4 +381,12 @@ main {
 .footer-icon {
   width: 40px;
   margin: 5px;
+}
+
+.lift {
+  transition: ease 0.5s;
+}
+
+.lift:hover {
+  transform: translateY(-5px);
 }
