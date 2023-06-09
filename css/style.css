@@ -173,14 +173,15 @@ main {
 
 .projects-container {
   width: 100%;
-  border: 1px solid var(--teal);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 10px
 }
 
 .project {
   position: relative;
+  margin: 20px;
 }
 
 .screenshot {
@@ -261,6 +262,7 @@ main {
 }
 
 .project-skills {
+  width: 90%;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
