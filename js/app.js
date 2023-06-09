@@ -7,12 +7,23 @@ let deleting = false;
 
 /*---- Cached Element References ----*/
 const rolesEl = document.getElementById('roles');
+const scrollEl = document.querySelectorAll('.scroll');
+
+/*------------ Event Listeners ------------*/
+scrollEl.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector(el.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    })
+  })
+})
 
 /*------------ Functions ------------*/
 init();
 
 function init() {
-  typeText();
+  typeText()
 }
 
 function typeText() {
