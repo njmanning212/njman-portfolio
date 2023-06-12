@@ -350,13 +350,13 @@ main {
 
 .about-image {
   width: 300px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .about-text {
   text-align: center;
   font-size: 1.17em;
-  width: 70%;
+  width: 50%;
 }
 
 .up-arrow {
