@@ -95,6 +95,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../assets/images/full-bg-image.jpg);
 }
 
 #name {
@@ -133,7 +134,7 @@ main {
 }
 
 .section {
-  padding: 40px 0px;
+  padding: 2.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,6 +386,10 @@ main {
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
+  }
+
+  #home {
+    background-image: url(../assets/images/bg-image.jpeg);
   }
 
   .section {
