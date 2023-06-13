@@ -168,7 +168,7 @@ main {
 .badge {
   border-radius: 8px;
   height: 40px;
-  margin: 10px;
+  margin: .75rem;
 }
 
 .projects-list {
