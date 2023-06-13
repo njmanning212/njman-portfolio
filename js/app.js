@@ -8,6 +8,9 @@ let deleting = false;
 /*---- Cached Element References ----*/
 const rolesEl = document.getElementById('roles');
 const scrollEl = document.querySelectorAll('.scroll');
+const menuBtn = document.querySelector('.menu-button');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav a');
 
 /*------------ Event Listeners ------------*/
 scrollEl.forEach((el) => {
@@ -16,6 +19,26 @@ scrollEl.forEach((el) => {
     document.querySelector(el.getAttribute('href')).scrollIntoView({
       behavior: 'smooth',
     })
+  })
+})
+
+menuBtn.addEventListener('click', (e) => {
+  nav.classList.toggle('full-nav')
+  nav.classList.toggle('dropdown-nav')
+  e.currentTarget.classList.toggle('open')
+  if (e.currentTarget.classList.contains('open')) {
+    e.currentTarget.innerHTML = 'X'
+  } else {
+    e.currentTarget.innerHTML = '≡'
+  }
+})
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.toggle('full-nav')
+    nav.classList.toggle('dropdown-nav')
+    menuBtn.classList.toggle('open')
+    menuBtn.innerHTML = '≡'
   })
 })
 
