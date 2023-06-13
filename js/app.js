@@ -35,6 +35,7 @@ menuBtn.addEventListener('click', (e) => {
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
+    if (window.innerWidth > 768) return;
     nav.classList.toggle('full-nav')
     nav.classList.toggle('dropdown-nav')
     menuBtn.classList.toggle('open')
